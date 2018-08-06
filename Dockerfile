@@ -53,5 +53,5 @@ WORKDIR /root
 
 RUN wget $UNITY_SETUP_URL -O $UNITY_SETUP \
  && chmod +x $UNITY_SETUP \
- && yes | ./$UNITY_SETUP --unattended --install-location=/usr/local
+ && yes | ./$UNITY_SETUP --unattended --install-location=/usr/local \
  && rm $UNITY_SETUP
